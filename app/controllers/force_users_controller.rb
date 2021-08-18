@@ -26,6 +26,6 @@ class ForceUsersController < ApplicationController
     private 
 
     def force_user_params 
-        params.require(:force_user).permit(:name, :team, :gender, :race)
+        params.require(:force_user).permit(:name, :team, :gender, :race, :force_ability_id)
     end
 end

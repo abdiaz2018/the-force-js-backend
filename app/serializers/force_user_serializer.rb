@@ -1,3 +1,3 @@
 class ForceUserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :team, :gender, :race
+  attributes :id, :name, :team, :gender, :race, :force_ability
 end
