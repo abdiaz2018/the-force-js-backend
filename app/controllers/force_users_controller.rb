@@ -18,7 +18,7 @@ class ForceUsersController < ApplicationController
         render json: forceusers
     end
 
-    def delete 
+    def destroy 
         forceuser = ForceUser.find(params[:id])
         forceuser.destroy 
         render json: {message: 'Force user successfully deleted.'}
