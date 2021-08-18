@@ -10,6 +10,7 @@ class ForceUsersController < ApplicationController
 
     def show 
         forceuser = ForceUser.find(params[:id])
+        render json: forceuser 
     end
 
     def index 
